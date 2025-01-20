@@ -69,15 +69,11 @@
             display: flex;
             justify-content: center;
             gap: 20px;
-            margin-top: 20px;
+            margin-top: 50px; /* Поднимаем репутацию выше */
         }
 
         .stat-container {
-            background-color: #1c1c1c;
-            border-radius: 10px;
-            padding: 20px 30px;
             text-align: center;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         }
 
         .stat-number {
@@ -94,24 +90,19 @@
         }
 
         .increment {
-            background-color: #555; /* Сделано серым */
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
+            background: none; /* Убираем фон */
+            border: none; /* Убираем рамку */
+            color: gray; /* Делаем плюс серым */
+            font-size: 20px; /* Увеличиваем размер плюса */
             cursor: pointer;
         }
 
         .increment:disabled {
-            background-color: #777;
+            color: #777;
             cursor: not-allowed;
         }
 
         @media (max-width: 768px) {
-            .stat-container {
-                padding: 15px 20px;
-            }
-
             .stat-number {
                 font-size: 18px;
             }
@@ -141,13 +132,7 @@
         <div class="profile">
             <img src="https://envs.sh/HwG.png" alt="Profile Picture" class="profile-pic">
             <h1>amor</h1>
-            <a href="https://t.me/ceevt" class="profile-link" target="_blank">t.me/amor</a>
-        </div>
-        <div class="buttons">
-            <a href="https://t.me/ceevt" class="btn">Message</a>
-            <a href="https://t.me/amorsrev" class="btn">Vouches</a>
-            <a href="https://t.me/amorpts" class="btn">Portal</a>
-            <a href="https://t.me/rentmod" class="btn">Rent</a>
+            <a href="https://t.me/amor" class="profile-link" target="_blank">t.me/amor</a>
         </div>
         <div class="stats">
             <div class="stat-container">
@@ -160,6 +145,12 @@
                 <div class="stat-title">Vouches</div>
                 <button id="vouches-btn" class="increment" onclick="incrementVouches()">+</button>
             </div>
+        </div>
+        <div class="buttons">
+            <a href="https://t.me/ceevt" class="btn">Message</a>
+            <a href="https://t.me/amorsrev" class="btn">Vouches</a>
+            <a href="https://t.me/amorpts" class="btn">Portal</a>
+            <a href="https://t.me/rentmod" class="btn">Rent</a>
         </div>
     </div>
     <script>
@@ -199,4 +190,4 @@
         }
     </script>
 </body>
-    </html>
+</html>
